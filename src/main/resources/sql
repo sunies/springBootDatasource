@@ -1,0 +1,8 @@
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(512) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `password` varchar(512) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `create_time` datetime NOT NULL,
+  `update_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=1002 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;

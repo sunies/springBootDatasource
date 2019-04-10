@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    test-db1:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/db_master?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: 123456
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    test-db2:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/db_slave1?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: 123456
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  type-aliases-package: com.buegeon.pojo
+server:
+  port: 8082
